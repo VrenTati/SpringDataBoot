@@ -1,4 +1,7 @@
 package com.example.springdataboot.repositories;
 
-public interface EmployeeRepository extends org.springframework.data.jpa.repository.JpaRepository<com.example.springdataboot.data.Employee, java.lang.Integer> {
+import com.example.springdataboot.data.Employee;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
 }

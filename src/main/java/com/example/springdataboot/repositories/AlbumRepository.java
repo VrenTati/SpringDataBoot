@@ -1,4 +1,7 @@
 package com.example.springdataboot.repositories;
 
-public interface AlbumRepository extends org.springframework.data.jpa.repository.JpaRepository<com.example.springdataboot.data.Album, java.lang.Integer> {
+import com.example.springdataboot.data.Album;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface AlbumRepository extends JpaRepository<Album, Integer> {
 }
